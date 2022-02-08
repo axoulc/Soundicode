@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Soundicode</string>
+    <string name="record_audio">Record audio</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_mic">Mic</string>
+    <string name="title_file">File</string>
+    <string name="title_history">History</string>
+    <string name="clear_history">Clear History</string>
+    <string name="cleared_history">History Cleared</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="browse">browse</string>
+    <string name="close_dialog">Close</string>
+</resources>

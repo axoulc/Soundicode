@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_mic">
+
+    <fragment
+        android:id="@+id/navigation_mic"
+        android:name="com.axoul.soundicode.ui.mic.MicFragment"
+        android:label="@string/title_mic"
+        tools:layout="@layout/fragment_mic" />
+
+    <fragment
+        android:id="@+id/navigation_file"
+        android:name="com.axoul.soundicode.ui.file.FileFragment"
+        android:label="@string/title_file"
+        tools:layout="@layout/fragment_file" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.axoul.soundicode.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>
