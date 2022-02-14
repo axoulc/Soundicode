@@ -17,7 +17,7 @@ class HistoryDialog(private val mContext: Context, private val detailResponse: J
     private lateinit var dialogArtist: TextView
     private lateinit var closeBtn: Button
 
-    override fun onCreate(savedInstanceState: Bundle) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.history_dialog)

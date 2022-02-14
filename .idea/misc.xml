@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_mic.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/history_dialog.xml" value="0.35625" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2601851851851852" />
+        <entry key="app/src/main/res/menu/options_history.xml" value="0.35625" />
       </map>
     </option>
   </component>
