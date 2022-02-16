@@ -4,9 +4,9 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class JsonResponse (
-    val matches: List<matches>,
-    val track: track,
-    val timestamp: Long
+    val matches: List<matches>?,
+    val track: track?,
+    val timestamp: Long?
 )
 
 data class matches (

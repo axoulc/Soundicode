@@ -26,8 +26,8 @@ class HistoryDialog(private val mContext: Context, private val detailResponse: J
         dialogArtist = findViewById(R.id.dialog_artist)
         closeBtn = findViewById(R.id.close_btn)
         closeBtn.setOnClickListener { dismiss() }
-        Glide.with(mContext).load(detailResponse.track.images.coverart).into(dialogImg)
-        dialogTitle.text = detailResponse.track.title
-        dialogArtist.text = detailResponse.track.subtitle
+        Glide.with(mContext).load(detailResponse.track?.images?.coverart).into(dialogImg)
+        dialogTitle.text = detailResponse.track?.title
+        dialogArtist.text = detailResponse.track?.subtitle
     }
 }

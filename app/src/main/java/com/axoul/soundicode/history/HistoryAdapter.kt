@@ -54,10 +54,10 @@ class HistoryAdapter(private val mResponse: List<JsonResponse?>) : RecyclerView.
         val mArtist = holder.artist
         mArtist.text = resp?.track?.subtitle
         val mDate = holder.date
-        val currentDate = Date(resp!!.timestamp)
+        val currentDate = Date(resp!!.timestamp!!)
         mDate.text = df.format(currentDate)
         val mImg = holder.imgHist
-        Glide.with(mContext!!).load(resp.track.images.coverart).into(mImg)
+        Glide.with(mContext!!).load(resp.track?.images?.coverart).into(mImg)
     }
 
     override fun getItemCount(): Int {
