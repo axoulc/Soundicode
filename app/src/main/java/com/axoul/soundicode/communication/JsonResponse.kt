@@ -12,7 +12,7 @@ data class JsonResponse (
 data class matches (
     val id: String,
     val offset: Float,
-    val channel: String,
+    val channel: String?,
     val timeskew: Float,
     val frequencyskew: Float
 )
