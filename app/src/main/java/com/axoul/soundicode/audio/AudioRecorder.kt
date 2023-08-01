@@ -7,6 +7,8 @@ import android.media.AudioFormat
 import android.media.AudioRecord
 import android.media.MediaRecorder
 import android.os.*
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import com.axoul.soundicode.ui.mic.MicFragment
@@ -94,10 +96,10 @@ class AudioRecorder(val parent: MicFragment) {
         parent.toogleRecorder()
         parent.addResult(finalResponse)
         val vib = parent.requireActivity().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
-        if (Build.VERSION.SDK_INT >= 26) {
+        if (Build.VERSION.SDK_INT > 26) {
             vib.vibrate(VibrationEffect.createOneShot(200, VibrationEffect.DEFAULT_AMPLITUDE))
         } else {
-            vib.vibrate(200)
+            vib.vibrate(400)
         }
         History.setHistory(parent.activity, finalResponse)
     }
